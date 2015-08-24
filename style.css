@@ -228,4 +228,21 @@ body:not(.home) #header div.tile-area
 
 .earthWays_backerTheme .ignitiondeck form#fes .form-row input:not([type="button"]), .earthWays_backerTheme .ignitiondeck form .form-row input:not([type="button"]), .earthWays_backerTheme .ignitiondeck form#fes .form-row textarea, .earthWays_backerTheme .ignitiondeck form .form-row textarea, .earthWays_backerTheme .ignitiondeck form#fes .form-row #project_faq, .earthWays_backerTheme .ignitiondeck form .form-row #project_faq, .earthWays_backerTheme .ignitiondeck form#fes .form-row #project_long_description, .earthWays_backerTheme .ignitiondeck form .form-row #project_long_description, .earthWays_backerTheme .ignitiondeck form#fes .form-row #project_level_1_long_description, .earthWays_backerTheme .ignitiondeck form .form-row #project_level_1_long_description, .earthWays_backerTheme .ignitiondeck form#fes .form-row #project_video, .earthWays_backerTheme .ignitiondeck form .form-row #project_video, .earthWays_backerTheme .ignitiondeck form#fes .form-row select, .earthWays_backerTheme .ignitiondeck form .form-row select
 { padding: 8px;
+  color: #686e4a;
+}
+.earthWays_backerTheme .ignitiondeck form#fes .form-row label, .ignitiondeck form .form-row label
+{ color: #3b411c;
+}
+
+.earthWays_backerTheme .ignitiondeck form#fes #company_logo::-webkit-file-upload-button, .earthWays_backerTheme .ignitiondeck form #company_logo::-webkit-file-upload-button, .earthWays_backerTheme .ignitiondeck form#fes #project_hero::-webkit-file-upload-button, .earthWays_backerTheme .ignitiondeck form #project_hero::-webkit-file-upload-button, .earthWays_backerTheme .ignitiondeck form#fes #project_image2::-webkit-file-upload-button, .earthWays_backerTheme .ignitiondeck form #project_image2::-webkit-file-upload-button, .earthWays_backerTheme .ignitiondeck form#fes #project_image3::-webkit-file-upload-button, .earthWays_backerTheme .ignitiondeck form #project_image3::-webkit-file-upload-button, .earthWays_backerTheme .ignitiondeck form#fes #project_image4::-webkit-file-upload-button, .earthWays_backerTheme .ignitiondeck form #project_image4::-webkit-file-upload-button, .earthWays_backerTheme .ignitiondeck form#fes .form-row input[type="file"]::-webkit-file-upload-button, .earthWays_backerTheme .ignitiondeck form .form-row input[type="file"]::-webkit-file-upload-button
+{ color: #686e4a;
+  background: #e3e6d6;
+}
+
+.earthWays_backerTheme .ignitiondeck form#fes .form-row input[type="file"], .earthWays_backerTheme .ignitiondeck form .form-row input[type="file"]
+{ padding: 4px;
+}
+
+.earthWays_backerTheme .ignitiondeck form#fes .form-row input, .earthWays_backerTheme .ignitiondeck form .form-row input
+{ color: #3b411c;
 }
