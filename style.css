@@ -1,0 +1,207 @@
+/*
+ Theme Name:     Backer Child
+ Theme URI:      http://demo.krownthemes.com/backer/
+ Description:    A basic child theme for the Backer theme.
+ Author:         KrownThemes
+ Author URI:     http://krownthemes.com
+ Template:       backer
+ Version:        1.0
+*/
+
+@import url("../backer/style.css");
+
+/* --------------------------------------
+-----   Theme customization starts here   -----
+------------------------------------------*/
+
+body.home #page-title
+{ display: none;
+}
+
+#main-menu
+{ margin-top: 10px;
+}
+.top-menu > li > a {
+   font-size: 1.1em;
+   color: #6A6A6A;
+}
+
+article.krown-id-item figure
+{  height: 152px;
+   text-align: center;
+}
+article.krown-id-item figure img
+{  max-height: 152px; 
+}
+.krown-id-item .title
+{ color: #4a4a4a;
+}
+#payment_submit_button:disabled
+{ color:#aaaaaa;
+   opacity:0.2;
+}
+
+input, textarea
+{ background-color: #D7E68A;
+  color: #333;
+  margin-bottom: 0px;
+}
+input:focus, textarea:focus
+{ background-color: #E0CBF0;  
+}
+body *
+{ font-family: 'Ubuntu', sans-serif;
+}
+
+*::-webkit-input-placeholder {
+    color: #555;
+    text-shadow: 0px 0px 1px #666;
+    font-family: 'Ubuntu', sans-serif;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #555;
+    text-shadow: 0px 0px 1px #666;
+    font-family: 'Ubuntu', sans-serif;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #555;
+    text-shadow: 0px 0px 1px #666;
+    font-family: 'Ubuntu', sans-serif;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #555;
+    text-shadow: 0px 0px 1px #666;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+*::-webkit-input-placeholder:focus {
+    color: #555;
+    text-shadow: none;
+}
+*:-moz-placeholder :focus {
+    color: #555;
+    text-shadow: none;
+}
+*::-moz-placeholder :focus {
+    color: #555;
+    text-shadow: none;
+}
+*:-ms-input-placeholder :focus {
+    color: #555;
+    text-shadow: none;
+}
+
+page.page-id-1155 form label
+{ display: none;
+}
+
+/*home page stuff*/
+.ew-frontPageCTA
+{ width: 10%;
+  height: 10%;
+}
+
+/*metro stuff*/
+.anchorFiller
+{ width:  100%;
+  height: 100%;
+}
+
+.ew-op-green
+{ background-color: rgba(165, 198, 83, 0.7) !important;
+}
+
+.tile-label-span
+{ color: rgb(91, 110, 46);
+  padding: 4px;
+  background-color: rgba(255,255,255, 0.7);
+  border-radius: 4px;
+}
+.tile-container a, .tile-container a:visited, .tile a, .tile a:visited
+{ color: rgb(91, 110, 46);
+  color: black;
+}
+.tile-container a:hover, .tile a:hover
+{ color: black;
+}
+.ew-green
+{
+}
+
+/*Metro Header*/
+.logo-tile .image-container .frame
+{ background-color: transparent;
+}
+
+.top-menu > li
+{ margin-left: 25px;
+}
+
+#header .tile-area, #header .tile-group, #footer1 .tile-area, #footer1 .tile-group
+{ padding: 0px;
+  margin: 0px;
+}
+
+/*homePageSpecific*/
+body.home #main-menu li:not(.green)
+{ display:none;
+}
+body.home #logo
+{ display: none;}
+/* Not on the Home Page*/
+body:not(.home) #header div.tile-area
+{ display:none;
+}
+
+.showUnder1180
+{ display:none;
+}
+
+@media all and (max-width: 1180px)
+{ body:not(.home) #main-menu
+  { width: 600px;
+  }
+  body:not(.home) .top-menu > li
+  { margin-bottom: 10px;
+  }
+
+  .showOver1180
+  {display: none;
+  }
+  .showUnder1180
+  {display: block;
+  }
+}
+
+@media all and (max-width: 979px) 
+{ body.home #main-menu .top-menu 
+  { display: block !important;
+  }
+  body.home #main-menu .responsive-menu 
+  { display: none !important;
+  }
+  body:not(.home) #main-menu
+  { width: 0px;
+  }
+}
+
+
+/*project grid*/
+/*.krown-id-item .meta 
+{  margin-top: -7px;
+  margin-bottom: -80px;
+}
+.krown-pie.small, .krown-pie.small .holder
+{ margin-top: -12px;
+}
+.krown-id-item ul
+{ text-align: right;
+  margin-top: 4px;
+}
+.krown-id-item .title
+{ height: 48px;
+}
+*/
