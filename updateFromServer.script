@@ -1,0 +1,3 @@
+ wget -m ftp://earthwayscom@ftp.earth-ways.com/public_html/wp-content/themes/backer-earthWays --ask-password -nH --cut-dirs=4
+git add .
+git commit -m "$1"

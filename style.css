@@ -205,3 +205,27 @@ body:not(.home) #header div.tile-area
 { height: 48px;
 }
 */
+
+/*Front End Forms*/
+.earthWays_backerTheme .normal-content .ignitiondeck form input[type="submit"],
+.earthWays_backerTheme form input,
+.earthWays_backerTheme form textarea
+
+{ background-color: #e0e6c1 !important;
+  margin: 5px;
+}
+
+.earthWays_backerTheme .ignitiondeck form .form-row
+{ padding-left: 20px !important;
+  padding-right: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+.earthWays_backerTheme .ignitiondeck form#fes li, 
+.earthWays_backerTheme .ignitiondeck form li
+{ padding-left: 20px !important;
+}
+
+.earthWays_backerTheme .ignitiondeck form#fes .form-row input:not([type="button"]), .earthWays_backerTheme .ignitiondeck form .form-row input:not([type="button"]), .earthWays_backerTheme .ignitiondeck form#fes .form-row textarea, .earthWays_backerTheme .ignitiondeck form .form-row textarea, .earthWays_backerTheme .ignitiondeck form#fes .form-row #project_faq, .earthWays_backerTheme .ignitiondeck form .form-row #project_faq, .earthWays_backerTheme .ignitiondeck form#fes .form-row #project_long_description, .earthWays_backerTheme .ignitiondeck form .form-row #project_long_description, .earthWays_backerTheme .ignitiondeck form#fes .form-row #project_level_1_long_description, .earthWays_backerTheme .ignitiondeck form .form-row #project_level_1_long_description, .earthWays_backerTheme .ignitiondeck form#fes .form-row #project_video, .earthWays_backerTheme .ignitiondeck form .form-row #project_video, .earthWays_backerTheme .ignitiondeck form#fes .form-row select, .earthWays_backerTheme .ignitiondeck form .form-row select
+{ padding: 8px;
+}
