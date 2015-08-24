@@ -150,7 +150,7 @@ function metroMenu()
           <div class="slide-over  op-green text-small padding10">
             <a href="discover">
               <div class="anchorFiller">
-                <a href="make-a-donation"><span>Check out our projects, everyone is worth your money, and reading them will make you happy</span></a>
+                <span>Check out our projects, every one is worth your money, and reading them will make you happy</span>
               </div>
             </a>
           </div>

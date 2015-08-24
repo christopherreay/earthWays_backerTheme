@@ -180,7 +180,7 @@
           <div class="slide-over  op-green text-small padding10">
             <a href="discover">
               <div class="anchorFiller">
-                <a href="make-a-donation"><span>Check out our projects, everyone is worth your money, and reading them will make you happy</span></a>
+                <span>Check out our projects, everyone is worth your money, and reading them will make you happy</span>
               </div>
             </a>
           </div>
@@ -203,12 +203,12 @@
           <div class="slide-over  op-green text-small padding10">
             <a href="dashboard/?create_project=1">
               <div class="anchorFiller">
-                <a href="make-a-donation"><span>Leverage our platform and community for 0% commission fund raising on Ethicaly Mindful Projects</span></a>
+                <span>Leverage our platform and community for 0% commission fund raising on Ethicaly Mindful Projects</span>
               </div>
             </a>
           </div>
           <div class="tile-label">
-              <span class="tile-label-span">Create</span>
+              <a href="dashboard/?create_project=1"><span class="tile-label-span">Create</span></a>
           </div>
         </div>
       </div>
@@ -226,12 +226,12 @@
           <div class="slide-over  op-green text-small padding10">
             <a href="about-us">
               <div class="anchorFiller">
-                <a href="make-a-donation"><span>Learn about us. Who we are, why we do what we do.</span></a>
+                <span>Learn about us. Who we are, why we do what we do.</span>
               </div>
             </a>
           </div>
           <div class="tile-label">
-              <span class="tile-label-span">About</span>
+              <a href="about-us"><span class="tile-label-span">About</span></a>
           </div>
         </div>
       </div>
@@ -249,12 +249,12 @@
           <div class="slide-over  op-green text-small padding10">
             <a href="contact">
               <div class="anchorFiller">
-                <<a href="make-a-donation">><span>Send us messages. Anything! On Topic or Off. Complaints or Compliments or Chat</span></a>
+                <span>Send us messages. Anything! On Topic or Off. Complaints or Compliments or Chat</span>
               </div>
             </a>
           </div>
           <div class="tile-label">
-              <span class="tile-label-span">Contact</span>
+              <a href="contact"><span class="tile-label-span">Contact</span></a>
           </div>
         </div>
       </div>

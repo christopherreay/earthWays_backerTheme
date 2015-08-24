@@ -331,3 +331,6 @@ body:not(.home) #header div.tile-area
 { color: #3b411c;
 }
 
+.earthWays_backerTheme button[type="submit"].processing
+{ background-color: #e0e6c1;
+}
