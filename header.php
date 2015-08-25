@@ -31,6 +31,18 @@
             '<meta itemprop="description"     content="'.$ign_project_description.'">' ."\r\n".
             '<meta name="twitter:description" content="'.$ign_project_description.'">' ."\r\n";
     }
+    else
+    { $krown_page_subtitle = get_post_meta( $post->ID, 'krown_page_subtitle', true);
+      
+      $ign_project_description = $krown_page_subtitle ? $krown_page_subtitle : "Give this page a subtitle.. Go on, make something up. We obvs are farming or playing with the animals";
+      //if ($krown_page_subtitle == "") then $ign_project_description = "We are modern. We are systems analyists, farmers, lovers. Ad Hoc Trust Based Currency.";
+
+      echo  '<meta property="og:description"  content="'.$ign_project_description.'">' ."\r\n".
+            '<meta name="description"         content="'.$ign_project_description.'">' ."\r\n".
+            '<meta itemprop="description"     content="'.$ign_project_description.'">' ."\r\n".
+            '<meta name="twitter:description" content="'.$ign_project_description.'">' ."\r\n";
+      //Ethical Crowdfunding, a Modern Approach to Enterprise
+    }
   ?>
 
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
