@@ -50,6 +50,16 @@ function earthWays_custom_scripts(){
     
 }
 
+function add_slug_body_class( $classes ) {
+global $post;
+if ( isset( $post ) ) {
+$classes[] = $post->post_type . '-' . $post->post_name;
+}
+return $classes;
+}
+add_filter( 'body_class', 'add_slug_body_class' );
+
+
 add_action('wp_enqueue_scripts', 'earthWays_custom_scripts');
 
 function krown_check_page_title() {

@@ -431,6 +431,39 @@ body:not(.home) #header div.tile-area
 { color: #3b411c;
 }
 
+/*Product Payment Page*/
+body.page-purchase-page header#page-title
+{ display: none;
+}
 .earthWays_backerTheme button[type="submit"].processing
 { background-color: #e0e6c1;
+}
+.earthWays_backerTheme .checkout-wrapper .paymentDetailsForm
+{ max-width: 650px;
+  width: 75%;
+  margin: 0 auto;
+}
+.earthWays_backerTheme .memberdeck #payment-form
+{ max-width: none;
+  width: 100%;
+
+}
+.earthWays_backerTheme .finalDescPaymentWrapper,
+{ width: 90%;
+  margin: 0 auto;
+  text-align: center !important;
+}
+.earthWays_backerTheme .memberdeck form .finaldesc p
+{ text-align: center !important;
+}
+
+.earthWays_backerTheme .memberdeck .idc-terms-checkbox
+{ padding-top: 0px;
+}
+.earthWays_backerTheme .memberdeck form  .form-row
+{ margin-top: 0px;
+}
+.productPurchaseSubmitWrapper
+{ width: 200px;
+  margin: 0 auto;
 }
