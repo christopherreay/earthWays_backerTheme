@@ -44,6 +44,106 @@ article.krown-id-item figure img
    opacity:0.2;
 }
 
+.earthWays_backerTheme #page-title .subtitle
+{ font-family: Ubuntu, sans-serif;
+  font-kerning: auto;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-ligatures: normal;
+  font-weight: 500;
+}
+
+header#page-title
+{ margin-bottom: 20px;
+}
+.earthWays_backerTheme ul.titles,
+.earthWays_backerTheme ul.titles li
+{ border: 0px;
+}
+.earthWays_backerTheme .krown-tabs .titles
+{ height: 45px;
+}
+.earthWays_backerTheme .krown-tabs .titles li
+{ height: 35px;
+}
+.earthWays_backerTheme .krown-tabs .titles li h5
+{ padding: 0px 40px !important;
+}
+.earthWays_backerTheme .krown-tabs .titles li.opened:hover
+{ background: #ececec;
+}
+.earthWays_backerTheme #project-container.krown-tabs .contents
+{ margin-top: 0px;
+  margin-bottom: 0px;
+  padding:10px;
+  background-color: rgb(235,235,235);
+}
+
+.earthWays_backerTheme .krown-tabs .contents > div
+{ padding: 0px;
+  
+}
+.earthWays_backerTheme #project-container .project-content
+{ padding: 0px;
+  padding-top: 10px;
+  background-color: none;
+}
+.earthWays_backerTheme #project-container .project-content > *:first-child
+{ 
+  margin-bottom: 0px;
+  background: white;
+  padding-left: 10px;
+}
+.earthWays_backerTheme #project-container .project-content > *:first-child > p
+{ /*display: none;*/
+}
+.share-buttons p 
+{ margin: 11px 10px 0px 0px;
+}
+.earthWays_backerTheme .ignitiondeck.id-creatorprofile 
+{ margin: 10px 0px 0px 0px;
+  padding: 0px;
+  background: white;
+  border: none;
+  border-width: 1px 0;
+}
+.earthWays_backerTheme .ignitiondeck.id-creatorprofile .id-creator-avatar
+{ padding: 10px;
+  background-color: rgb(245,245,245);
+  margin-right: 0px;
+}
+.earthWays_backerTheme .ignitiondeck.id-creatorprofile .id-creator-avatar img
+{ margin-right: 0px;
+}
+.earthWays_backerTheme .ignitiondeck.id-creatorprofile .id-creator-name
+{ margin-top: 10px;
+  margin-left: 10px;
+}
+.earthWays_backerTheme .ignitiondeck.id-creatorprofile .id-creator-location
+{ margin-left: 20px;
+}
+.earthWays_backerTheme .ignitiondeck.id-creatorprofile .id-creator-links
+{ margin-left: 20px;
+}
+.earthWays_backerTheme .topImageThingForProject,
+.earthWays_backerTheme #project-sidebar
+{ padding-top:0px;
+  margin-top: 0px;
+}
+.earthWays_backerTheme #project-container .project-content #longDescription
+{ margin-top: 10px;
+  background: white;
+  padding: 10px;
+}
+
+.earthWays_backerTheme #project-container #comments.project-content
+{ padding: 0px;
+  padding-top: 0px;
+  background-color: none;
+}
+
 input, .earthWays_backerTheme textarea
 { background-color: #D7E68A;
   color: #333;

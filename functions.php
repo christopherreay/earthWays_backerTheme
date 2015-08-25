@@ -52,6 +52,110 @@ function earthWays_custom_scripts(){
 
 add_action('wp_enqueue_scripts', 'earthWays_custom_scripts');
 
+function krown_check_page_title() {
+
+    global $post;
+
+    $page_title = $page_subtitle = '';
+
+    if ( is_404() ) {
+
+      // 404
+      $page_title = __( '404', 'krown' );
+      $page_subtitle = __( 'Page Not Found', 'krown' );
+
+    } else if ( is_search() ) {
+
+      // Search
+      $page_title = __( 'Search Results', 'krown' );
+      $page_subtitle = __( 'For', 'krown' ) . ' "' . get_search_query() . '"';
+
+    } else if ( is_page_template( 'template-slider.php' ) ) {
+
+      // Page with slider
+      $page_title = '';
+
+    } else {
+
+      // Regular pages
+
+      $page_title = get_the_title();
+      $page_subtitle = get_post_meta( $post->ID, 'krown_page_subtitle', true );
+
+      // Portfolio posts vs Blog posts
+      if( is_singular( 'ignition_product' ) ) {
+
+        $page_title     = get_the_title( $post->ID );
+        $page_subtitle  = "An Earth Ways Crowdfunding Project";
+
+      } else if ( is_singular( 'post' ) ) {
+
+        $page_title = get_the_title( $post->ID );
+        $page_subtitle = '<aside class="post-meta">
+          <ul>
+            <li class="date"><a href="' . get_permalink() . '"><time pubdate datetime="' . get_the_time( 'c' ) . '">' . get_the_time( __( 'F j, Y', 'krown' ) ) . '</time></a></li>
+            <li class="comments"><a href="' . get_permalink() . '#comments">' . __( 'Comments', 'krown' ) . ' ' . get_comments_number( '0', '1', '%' ) . '</a></li>
+          </ul>
+        </aside>';
+
+      }
+
+      // Archives
+
+      if ( is_category() ) {
+
+        $page_title = __( 'Categories Archives', 'krown' );
+        $page_subtitle = get_category( get_query_var( 'cat' ) )->name;
+
+      } else if ( is_author() ) {
+
+        $page_title = __( 'Author Archives', 'krown' );
+        $page_subtitle = get_userdata( get_query_var( 'author' ) )->display_name;
+
+      } else if ( is_tag() ) {
+
+        $page_title = __( 'Tags Archives', 'krown' );
+        $page_subtitle = single_tag_title( '', false );
+
+      } else if ( is_day() ) {
+
+        $page_title = __( 'Daily Archives', 'krown' );
+        $page_subtitle = get_the_date();
+
+      } else if ( is_month() ) {
+
+        $page_title = __( 'Monthly Archives', 'krown' );
+        $page_subtitle = get_the_date( 'F Y' );
+
+      } else if ( is_year() ) {
+
+        $page_title = __( 'Yearly Archives', 'krown' );
+        $page_subtitle = get_the_date( 'Y' );
+
+      } else if ( get_query_var( 'taxonomy' ) == 'project_category' ) {
+
+        $page_title = __( 'Categories Archives', 'krown' );
+        $page_subtitle = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) )->name; 
+
+      } else if ( is_archive() ) {
+
+        $page_title = __( 'Archives', 'krown' );
+
+      }
+
+    }
+
+    // Return by case
+    if ( $page_title != '' ) {
+      return '<header id="page-title"><h1 class="title">' . $page_title . '</h1>' . ( $page_subtitle != '' ? '<h2 class="subtitle">' . $page_subtitle . '</h2>' : '' ) . '</header>';
+    } else {
+      return '';
+    }
+
+  }
+
+
+
 function metroMenu()
 { return '<!-- start of pretty bubble -->
       <div class="tile-area fg-white tile-area-scheme-dark" style="width: 100%;">
