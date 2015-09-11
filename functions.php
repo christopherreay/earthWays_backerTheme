@@ -49,6 +49,7 @@ function earthWays_custom_scripts(){
     wp_enqueue_script( 'metro_js' );
     
 }
+add_action('wp_enqueue_scripts', 'earthWays_custom_scripts');
 
 function add_slug_body_class( $classes ) {
 global $post;
@@ -60,7 +61,14 @@ return $classes;
 add_filter( 'body_class', 'add_slug_body_class' );
 
 
-add_action('wp_enqueue_scripts', 'earthWays_custom_scripts');
+function custom_loginlogo_url($url) {
+    return '/';
+}
+add_filter( 'login_headerurl', 'custom_loginlogo_url' );
+function change_title_on_logo() {
+  return "Reuniting Land'o Nature";
+}
+add_filter('login_headertitle', 'change_title_on_logo');
 
 function krown_check_page_title() {
 
