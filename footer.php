@@ -82,12 +82,11 @@
 
       <?php endif; ?>
 
+    <!-- start of pretty bubble -->
+    
+    <?php echo metroMenu(); ?>
 
-      <!-- start of pretty bubble -->
-     
-      <?php echo metroMenu(); ?>
-
-      <!-- end of pretty bubble -->
+    <!-- end of pretty bubble -->
 
     </div>
 
@@ -134,6 +133,14 @@
   <!-- IE7 Message End -->
 
   <?php wp_footer(); ?>
+
+  <?php 
+    /*global $post;
+    echo "<div>";
+      var_dump($post, is_home(), is_front_page(), "<br><br>", get_post_meta($post->ID)); 
+    echo "</div>";
+    */
+  ?>
 
 </body>
 </html>
