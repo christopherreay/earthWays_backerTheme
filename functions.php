@@ -226,7 +226,7 @@ function metroMenu()
           <div class="slide-over  op-green text-small padding10">
             <a href="make-a-donation">
               <div class="anchorFiller">
-                <span>We charge 0% commission. Donate to support ethical projects</span>
+                <span>We charge 0% commission. Donate to our website to support ethical projects</span>
               </div>
             </a>
           </div>

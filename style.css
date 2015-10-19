@@ -146,6 +146,10 @@ header#page-title
   background-color: none;
 }
 
+.earthWays_backerTheme .project-content p
+{ margin-bottom: 0px;
+}
+
 input, .earthWays_backerTheme textarea
 { background-color: #D7E68A;
   color: #333;
