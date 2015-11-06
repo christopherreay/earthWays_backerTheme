@@ -49,6 +49,7 @@ function earthWays_custom_scripts(){
     wp_enqueue_script( 'metro_js' );
     
 }
+add_action('wp_enqueue_scripts', 'earthWays_custom_scripts');
 
 function add_slug_body_class( $classes ) {
 global $post;
@@ -60,7 +61,14 @@ return $classes;
 add_filter( 'body_class', 'add_slug_body_class' );
 
 
-add_action('wp_enqueue_scripts', 'earthWays_custom_scripts');
+function custom_loginlogo_url($url) {
+    return '/';
+}
+add_filter( 'login_headerurl', 'custom_loginlogo_url' );
+function change_title_on_logo() {
+  return "Reuniting Land'o Nature";
+}
+add_filter('login_headertitle', 'change_title_on_logo');
 
 function krown_check_page_title() {
 
@@ -96,7 +104,7 @@ function krown_check_page_title() {
       if( is_singular( 'ignition_product' ) ) {
 
         $page_title     = get_the_title( $post->ID );
-        $page_subtitle  = "An Earth Ways Crowdfunding Project";
+        $page_subtitle  = "An Earth Ways Crowdfunding Project<br>100% free Crowdfunding for Ethical Projects<br>We take no commission. We work for love";
 
       } else if ( is_singular( 'post' ) ) {
 

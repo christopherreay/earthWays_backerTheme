@@ -113,9 +113,11 @@ header#page-title
 { padding: 10px;
   background-color: rgb(245,245,245);
   margin-right: 0px;
+  height: 85px;
 }
 .earthWays_backerTheme .ignitiondeck.id-creatorprofile .id-creator-avatar img
 { margin-right: 0px;
+  background-color: white;
 }
 .earthWays_backerTheme .ignitiondeck.id-creatorprofile .id-creator-name
 { margin-top: 10px;
@@ -142,6 +144,10 @@ header#page-title
 { padding: 0px;
   padding-top: 0px;
   background-color: none;
+}
+
+.earthWays_backerTheme .project-content p
+{ margin-bottom: 0px;
 }
 
 input, .earthWays_backerTheme textarea
