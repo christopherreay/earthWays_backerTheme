@@ -34,7 +34,7 @@
 
 include( 'includes/plugins.php' ); // Includes the plugins all over again
 
-function earthWays_custom_scripts(){
+function freeFreeCrowdfunding_custom_scripts(){
     
     // Register and Enqueue a Stylesheet
     // get_template_directory_uri will look up parent theme location
@@ -49,7 +49,7 @@ function earthWays_custom_scripts(){
     wp_enqueue_script( 'metro_js' );
     
 }
-add_action('wp_enqueue_scripts', 'earthWays_custom_scripts');
+add_action('wp_enqueue_scripts', 'freeFreeCrowdfunding_custom_scripts');
 
 function add_slug_body_class( $classes ) {
 global $post;
@@ -104,7 +104,7 @@ function krown_check_page_title() {
       if( is_singular( 'ignition_product' ) ) {
 
         $page_title     = get_the_title( $post->ID );
-        $page_subtitle  = "An Earth Ways Crowdfunding Project<br>100% free Crowdfunding for Ethical Projects<br>We take no commission. We work for love";
+        $page_subtitle  = "A Free Free Crowdfunding Project<br>100% free Community Platform for Ethical Projects<br>We take no commission. We work for love";
 
       } else if ( is_singular( 'post' ) ) {
 
@@ -176,7 +176,7 @@ function krown_check_page_title() {
 
 function metroMenu()
 { return '<!-- start of pretty bubble -->
-      <div class="tile-area fg-white tile-area-scheme-dark" style="width: 100%;">
+      <div class="tile-area fg-white tile-area-scheme-apple" style="width: 100%;">
   <!--<div class="tile-area-controls">
     <button class="image-button icon-right bg-transparent fg-white bg-hover-dark no-border"><span class="sub-header no-margin text-light">Sergey Pimenov</span> <span class="icon mif-user"></span></button>
     <button class="square-button bg-transparent fg-white bg-hover-dark no-border" onclick="showSearch()"><span class="mif-search"></span></button>
@@ -193,7 +193,7 @@ function metroMenu()
           <div class="image-container image-format-square" style="width: 100%;">
             <div class="frame">
               <a href="/">
-                <div style="width: 100%; height: 150px; border-radius: 0px; background-image: url(/wp-content/uploads/2014/10/earthlogo2.png); background-size: contain; background-repeat: no-repeat; background-position: center center">
+                <div style="width: 100%; height: 150px; border-radius: 0px; background-image: url(/wp-content/uploads/manualUploads/graphics/logo/ffc2.transparent.png); background-size: contain; background-repeat: no-repeat; background-position: center center">
                 </div>
               </a>
             </div>
@@ -205,7 +205,7 @@ function metroMenu()
           <div class="image-container image-format-square" style="width: 100%;">
             <div class="frame">
               <a href="/">
-                <div style="width: 100%; height: 150px; border-radius: 0px; background-image: url(/wp-content/uploads/2014/10/earthlogo2.png); background-size: contain; background-repeat: no-repeat; background-position: center center">
+                <div style="width: 100%; height: 150px; border-radius: 0px; background-image: url(/wp-content/uploads/manualUploads/graphics/logo/ffc2.transparent.png); background-size: contain; background-repeat: no-repeat; background-position: center center">
                 </div>
               </a>
             </div>
