@@ -193,7 +193,7 @@ function metroMenu()
           <div class="image-container image-format-square" style="width: 100%;">
             <div class="frame">
               <a href="/">
-                <div style="width: 100%; height: 150px; border-radius: 0px; background-image: url(/wp-content/uploads/2014/10/earthlogo2.png); background-size: contain; background-repeat: no-repeat; background-position: center center">
+                <div style="width: 100%; height: 150px; border-radius: 0px; background-image: url(/wp-content/uploads/manualUploads/graphics/logo/ffc2.transparent.png); background-size: contain; background-repeat: no-repeat; background-position: center center">
                 </div>
               </a>
             </div>
@@ -205,7 +205,7 @@ function metroMenu()
           <div class="image-container image-format-square" style="width: 100%;">
             <div class="frame">
               <a href="/">
-                <div style="width: 100%; height: 150px; border-radius: 0px; background-image: url(/wp-content/uploads/2014/10/earthlogo2.png); background-size: contain; background-repeat: no-repeat; background-position: center center">
+                <div style="width: 100%; height: 150px; border-radius: 0px; background-image: url(/wp-content/uploads/manualUploads/graphics/logo/ffc2.transparent.png); background-size: contain; background-repeat: no-repeat; background-position: center center">
                 </div>
               </a>
             </div>

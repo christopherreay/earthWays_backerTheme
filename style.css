@@ -473,3 +473,18 @@ body.page-purchase-page header#page-title
 { width: 200px;
   margin: 0 auto;
 }
+
+/*stuff*/
+form.paypaldonate
+{ margin-top: 0px;
+}
+form.paypaldonate input[type="image"]
+{ width: auto;
+}
+form.paypaldonate br
+{ display:none;
+}
+
+body.page-make-a-donation div#content p
+{ margin-bottom: 0px;  
+}
