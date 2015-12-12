@@ -79,7 +79,7 @@ get_header(); ?>
 
               krown_share_buttons( $post->ID );
 
-              echo do_action( 'id_content_before', $project_id );
+              echo str_replace("<a", "<a target='_blank'>", do_action( 'id_content_before', $project_id ));
               do_action( 'id_before_content_description', $project_id, $post->ID );
 
               echo "<div id='longDescription'>";

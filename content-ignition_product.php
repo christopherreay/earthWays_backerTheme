@@ -9,6 +9,8 @@
 
 	$raised = apply_filters('id_funds_raised', $project->get_project_raised(), $project->get_project_postid());
 	$percent = apply_filters('id_percentage_raised', $project->percent(), apply_filters('id_funds_raised', $project->get_project_raised(), $post_id, true), $post_id, apply_filters('id_project_goal', $project->the_goal(), $post_id, true));
+  error_log("Percent");
+  error_log(print_r($percent, true));
 
 	$colors = get_option( 'krown_colors' );
 	$retina = krown_retina();
@@ -45,7 +47,8 @@
 
       <aside class="meta">
 
-        <div class="krown-pie small" data-color="<?php echo ( intval( $percent ) > 99 ? $colors['pie3'] : $colors['pie2'] ); ?>"><div class="holder"><span class="value" data-percent="<?php echo $percent; ?>"><?php echo $percent; ?><sup>%</sup></span></div></div>
+        <div class="krown-pie small" data-color="<?php echo ( intval( $percent ) > 99 ? $colors['pie3'] : $colors['pie2'] ); ?>"><div class="holder">
+            <span class="value" data-percent="<?php echo $percent; ?>"><?php echo $percent; ?><sup>%</sup></span></div></div>
 
         <ul>
           <li><span><?php echo $raised . '</span> ' . __( 'Pledged', 'krown' ); ?></li>
