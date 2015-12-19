@@ -29,6 +29,21 @@ body.home #page-title
 { /*color: #686e4a;*/
 }
 
+.freeFreeCrowdfunding_backerTheme input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #3b411c;
+}
+.freeFreeCrowdfunding_backerTheme input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #3b411c;
+   opacity:  1;
+}
+.freeFreeCrowdfunding_backerTheme input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #3b411c;
+   opacity:  1;
+}
+.freeFreeCrowdfunding_backerTheme input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #3b411c;
+}
+
 article.krown-id-item figure
 {  height: 152px;
    text-align: center;
@@ -113,7 +128,7 @@ header#page-title
 { padding: 10px;
   background-color: rgb(245,245,245);
   margin-right: 0px;
-  height: 85px;
+  min-height: 85px;
 }
 .freeFreeCrowdfunding_backerTheme .ignitiondeck.id-creatorprofile .id-creator-avatar img
 { margin-right: 0px;
@@ -158,6 +173,11 @@ input, .freeFreeCrowdfunding_backerTheme textarea
 input:focus, textarea:focus
 { background-color: #E0CBF0;  
 }
+
+.freeFreeCrowdfunding_backerTheme .id-widget .level-binding[href]:hover 
+{ background: #dce8b9;
+}
+
 body *
 { font-family: 'Ubuntu', sans-serif;
 }
