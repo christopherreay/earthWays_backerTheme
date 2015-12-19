@@ -176,7 +176,7 @@ function krown_check_page_title() {
 
 function metroMenu()
 { return '<!-- start of pretty bubble -->
-      <div class="tile-area fg-white tile-area-scheme-apple" style="width: 100%;">
+      <div class="tile-area fg-white " style="width: 100%;">
   <!--<div class="tile-area-controls">
     <button class="image-button icon-right bg-transparent fg-white bg-hover-dark no-border"><span class="sub-header no-margin text-light">Sergey Pimenov</span> <span class="icon mif-user"></span></button>
     <button class="square-button bg-transparent fg-white bg-hover-dark no-border" onclick="showSearch()"><span class="mif-search"></span></button>
